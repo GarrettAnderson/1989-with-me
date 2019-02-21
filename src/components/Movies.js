@@ -9,8 +9,11 @@ class Movies extends Component {
       <main>
         {data.results.map((movie) => {
           // let movieList = movie.results
-          console.log(movie.results)
-          return <Movie />
+
+          console.log('https://image.tmdb.org/t/p/w185_and_h278_bestv2' + movie.backdrop_path)
+          let url = 'https://image.tmdb.org/t/p/w185_and_h278_bestv2' + movie.backdrop_path
+          console.log(url)
+          return <Movie key={movie.id} image={url} title={movie.original_title} overview={movie.overview} />
         })}
       </main>
     )
