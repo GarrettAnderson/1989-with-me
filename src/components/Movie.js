@@ -9,8 +9,8 @@ class Movie extends Component {
         <figure>
           <img src={this.props.image} />
           <figcaption>
-            <h3>Film Title</h3>
-            <p>Film Plot Overview</p>
+            <h3>{this.props.title}</h3>
+            <p>{this.props.overview}</p>
           </figcaption>
         </figure>
       </section>
