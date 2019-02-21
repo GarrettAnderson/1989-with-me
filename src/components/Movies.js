@@ -6,7 +6,7 @@ class Movies extends Component {
   render() {
     console.log(data)
     return (
-      <main>
+      <main className="main-container">
         {data.results.map((movie) => {
           // let movieList = movie.results
 
