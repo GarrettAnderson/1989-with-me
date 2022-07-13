@@ -4,6 +4,10 @@ class Movie extends Component {
   render() {
     // let url = 'https://image.tmdb.org/t/p/w185_and_h278_bestv2' + this.props.backdrop_path
     // console.log(url)
+
+    let formatedDate = this.props.released.toLocaleDateString()
+    console.log(formatedDate)
+
     return (
       <section>
         <figure>
