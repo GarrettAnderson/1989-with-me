@@ -56,3 +56,7 @@ figcaption p {
   color: deeppink;
   font-family: 'Montserrat';
 }
+
+input.search-movie {
+  height: 1.75rem;
+}
